@@ -1,0 +1,87 @@
+[
+    {
+        "code": "AC",
+        "emoji": "AC",
+        "name": "Accessories"
+    },
+    {
+        "code": "AP",
+        "emoji": "AP",
+        "name": "Appliances"
+    },
+    {
+        "code": "AR",
+        "emoji": "AR",
+        "name": "Art"
+    },
+    {
+        "code": "BI",
+        "emoji": "BI",
+        "name": "Binders"
+    },
+    {
+        "code": "BO",
+        "emoji": "BO",
+        "name": "Bookcases"
+    },
+    {
+        "code": "CH",
+        "emoji": "CH",
+        "name": "Chairs"
+    },
+    {
+        "code": "CO",
+        "emoji": "CO",
+        "name": "Copiers"
+    },
+    {
+        "code": "EN",
+        "emoji": "EN",
+        "name": "Envelopes"
+    },
+    {
+        "code": "FA",
+        "emoji": "FA",
+        "name": "Fasteners"
+    },
+    {
+        "code": "FU",
+        "emoji": "FU",
+        "name": "Furnishings"
+    },
+    {
+        "code": "LA",
+        "emoji": "LA",
+        "name": "Labels"
+    },
+    {
+        "code": "MA",
+        "emoji": "MA",
+        "name": "Machines"
+    },
+    {
+        "code": "PA",
+        "emoji": "PA",
+        "name": "Paper"
+    },
+    {
+        "code": "PH",
+        "emoji": "PH",
+        "name": "Phones"
+    },
+    {
+        "code": "ST",
+        "emoji": "ST",
+        "name": "Storage"
+    },
+    {
+        "code": "SU",
+        "emoji": "SU",
+        "name": "Supplies"
+    },
+    {
+        "code": "TA",
+        "emoji": "TA",
+        "name": "Tables"
+    }
+]
