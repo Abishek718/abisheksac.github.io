@@ -36,29 +36,30 @@ var getScriptPromisify = (src) => {
       const chart = echarts.init(this._root)
       const option = {
         tooltip: {
-            formatter: ' {a} <br/> {b} : $ {c}'
-          },
-          series: [
-            {
-              name: 'Profit',
-              type: 'gauge',
-              min: 0,
-              max: 500000,
-              progress: {
-                show: true
-              },
-              detail: {
-                valueAnimation: true,
-                formatter: '{value}'
-              },
-              data: [
-                {
-                  value: 286397.02,
-                  name: 'Profit'
-                }
-              ]
-            }
-          ]
+    formatter: ' {a} <br/> {b} : $ {c} Thousand'
+  },
+  series: [
+    {
+      name: 'Profit',
+      type: 'gauge',
+      min: 0,
+      max: 500,
+      progress: {
+        show: true
+      },
+      detail: {
+        valueAnimation: true,
+        formatter: '${value}'
+      },
+      data: [
+        {
+          value: 286.39,
+          name: 'Profit (in Thousand)'
+        }
+      ]
+    }
+  ]
+};
         // https://echarts.apache.org/examples/zh/index.html
       }
       chart.setOption(option)
