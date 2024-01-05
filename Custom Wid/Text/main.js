@@ -86,5 +86,5 @@ var getScriptPromisify = (src) => {
     }
   }
 
-  customElements.define('com-sap-sample-echarts-Text', SampleText)
+  customElements.define('com-sap-sample-echarts-graphic-stroke-animation', SampleText)
 })()
