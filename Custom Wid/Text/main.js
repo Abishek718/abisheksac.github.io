@@ -12,7 +12,7 @@ var getScriptPromisify = (src) => {
       <div id="root" style="width: 100%; height: 50%;">
       </div>
     `
-  class SampleText extends HTMLElement {
+  class graphic_stroke_animation extends HTMLElement {
     constructor () {
       super()
 
@@ -86,5 +86,5 @@ var getScriptPromisify = (src) => {
     }
   }
 
-  customElements.define('com-sap-sample-echarts-graphic-stroke-animation', SampleText)
+  customElements.define('com-sap-sample-echarts-graphic-stroke-animation',graphic_stroke_animation)
 })()
