@@ -5,8 +5,8 @@ var getScriptPromisify = (src) => {
 }
 
 (function () {
-  const Text = document.createElement('template')
-  Text.innerHTML = `
+  const anitext1 = document.createElement('template')
+  anitext1.innerHTML = `
       <style>
       </style>
       <div id="root" style="width: 100%; height: 50%;">
