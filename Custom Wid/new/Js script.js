@@ -1,11 +1,12 @@
 var ajaxCall = (key, url, prompt) => {
   return new Promise((resolve, reject) => {
     $.ajax({
-      url: url,
+      url: https://api.openai.com/v1
+/chat/completions,
       type: "POST",
       dataType: "json",
       data: JSON.stringify({
-        model: "text-davinci-002",
+        model: "gpt-4",
         prompt: prompt,
         max_tokens: 1024,
         n: 1,
