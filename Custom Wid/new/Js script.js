@@ -1,12 +1,11 @@
 var ajaxCall = (key, url, prompt) => {
   return new Promise((resolve, reject) => {
     $.ajax({
-      url: https://api.openai.com/v1
-/chat/completions,
+      url: url,
       type: "POST",
       dataType: "json",
       data: JSON.stringify({
-        model: "gpt-4",
+        model: "text-davinci-002",
         prompt: prompt,
         max_tokens: 1024,
         n: 1,
@@ -14,7 +13,7 @@ var ajaxCall = (key, url, prompt) => {
       }),
       headers: {
         "Content-Type": "application/json",
-        "Authorization": "Bearer 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",
+        Authorization: `Bearer ${key}`,
       },
       crossDomain: true,
       success: function (response, status, xhr) {
@@ -42,7 +41,7 @@ const url = "https://api.openai.com/v1";
   class MainWebComponent extends HTMLElement {
     async post(apiKey, endpoint, prompt) {
       const { response } = await ajaxCall(
-        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,
+        apiKey,
         `${url}/$ completions`,
         prompt
       );
