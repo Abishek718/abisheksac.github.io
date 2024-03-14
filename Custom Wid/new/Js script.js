@@ -3,9 +3,6 @@ var ajaxCall = (key, url, prompt) => {
     $.ajax({
       url: url,
       type: "POST",
-      xhrFields: {
-        withCredentials: true
-    },
       dataType: "json",
       data: JSON.stringify({
         model: "text-davinci-002",
