@@ -13,8 +13,7 @@ var ajaxCall = (key, url, prompt) => {
       }),
       headers: {
         "Content-Type": "application/json",
-        Authorization: `Bearer ${key}`,
-        "Access-Control-Allow-Origin":"*"
+        Authorization: `Bearer ${key}`
       },
       crossDomain: true,
       success: function (response, status, xhr) {
