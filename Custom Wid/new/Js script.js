@@ -42,7 +42,7 @@ const url = "https://api.openai.com/v1/chat";
     async post(apiKey, endpoint, prompt) {
       const { response } = await ajaxCall(
         apiKey,
-        `${url}/$ {completions}`,
+        `${url}/$ {endpoint}`,
         prompt
       );
       //console.log(response.choices[0].text);
