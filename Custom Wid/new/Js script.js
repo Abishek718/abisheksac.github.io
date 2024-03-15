@@ -44,7 +44,7 @@ const url = "https://poc-mc10-org-poc-mc-space10-openai-apis-srv.cfapps.us10-001
     async post(apiKey, endpoint, prompt) {
       const { response } = await ajaxCall(
         apiKey,
-        `${url}/${endpoint}`,
+        `${url}`,
         prompt
       );
       //console.log(response.choices[0].content);
