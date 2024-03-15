@@ -47,8 +47,8 @@ const url = "https://poc-mc10-org-poc-mc-space10-openai-apis-srv.cfapps.us10-001
         `${url}`,
         prompt
       );
-      //console.log(response.choices[0].content);
-      return response.choices[0].content;
+      //console.log(response.choices[0].message.content);
+      return response.choices[0].message.content;
     }
   }
   customElements.define("custom-widget", MainWebComponent);
