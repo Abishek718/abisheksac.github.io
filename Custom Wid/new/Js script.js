@@ -5,15 +5,17 @@ var ajaxCall = (key, url, prompt) => {
       type: "POST",
       dataType: "json",
       data: JSON.stringify({
-        model: "text-davinci-002",
-        prompt: prompt,
-        max_tokens: 1024,
-        n: 1,
-        temperature: 0.5,
-      }),
+  "messages": [
+    {
+      "role": "system",
+      "content": prompt
+    }
+  ],
+  "model": "gpt-4"
+}),
       headers: {
         "Content-Type": "application/json",
-        Authorization: `Bearer ${key}`
+        Authorization: `Basic c29vcml5YTo0NDQkU2llcnJh`
       },
       crossDomain: true,
       success: function (response, status, xhr) {
@@ -28,8 +30,7 @@ var ajaxCall = (key, url, prompt) => {
   });
 };
 
-const url = "https://api.openai.com/v1";
-const endpoint = "completions"
+const url = "https://poc-mc10-org-poc-mc-space10-openai-apis-srv.cfapps.us10-001.hana.ondemand.com/openai/chat";
 
 (function () {
   const template = document.createElement("template");
@@ -46,8 +47,8 @@ const endpoint = "completions"
         `${url}/${endpoint}`,
         prompt
       );
-      //console.log(response.choices[0].text);
-      return response.choices[0].text;
+      //console.log(response.choices[0].content);
+      return response.choices[0].content;
     }
   }
   customElements.define("custom-widget", MainWebComponent);
