@@ -30,6 +30,7 @@ var ajaxCall = (key, url, prompt) => {
 
 const url = "https://api.openai.com/v1";
 const endpoint = "completions"
+console.log("Test",endpoint)
 (function () {
   const template = document.createElement("template");
   template.innerHTML = `
