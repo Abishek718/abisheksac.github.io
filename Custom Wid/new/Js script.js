@@ -30,7 +30,7 @@ var ajaxCall = (key, url, prompt) => {
   });
 };
 
-const url = "https://poc-mc10-org-poc-mc-space10-openai-apis-srv.cfapps.us10-001.hana.ondemand.com/openai/chat";
+const url = "https://poc-mc10-org-poc-mc-space10-openai-apis-srv.cfapps.us10-001.hana.ondemand.com/genai/chat";
 
 (function () {
   const template = document.createElement("template");
