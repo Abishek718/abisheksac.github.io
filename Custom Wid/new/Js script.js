@@ -10,8 +10,7 @@ var ajaxCall = (key, url, prompt) => {
       "role": "system",
       "content": prompt
     }
-  ],
-  "model": "gpt-4"
+  ]
 }),
       headers: {
         "Content-Type": "application/json",
