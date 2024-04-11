@@ -35,7 +35,7 @@ var getScriptPromisify = (src) => {
 
       const chart = echarts.init(this._root)
       const option = {
-        backgroundColor: '#000',
+        backgroundColor: '#64b1f4',
         globe: {
           baseTexture: 'https://i2.wp.com/files.123freevectors.com/wp-content/original/160799-green-and-black-texture-background.jpg?w=500&q=95',
           shading: 'lambert',
