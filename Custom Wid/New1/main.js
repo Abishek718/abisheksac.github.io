@@ -34,21 +34,22 @@ var getScriptPromisify = (src) => {
       await getScriptPromisify('https://cdn.bootcdn.net/ajax/libs/echarts/5.0.0/echarts.min.js')
 
       const chart = echarts.init(this._root)
+      var ROOT_PATH = 'https://echarts.apache.org/examples';
       const option = {
-        backgroundColor: '#64b1f4',
+        backgroundColor: '#000',
         globe: {
-          baseTexture: 'https://i2.wp.com/files.123freevectors.com/wp-content/original/160799-green-and-black-texture-background.jpg?w=500&q=95',
+          baseTexture: ROOT_PATH + '/data-gl/asset/earth.jpg',
           shading: 'lambert',
-         // environment: ROOT_PATH + '/data-gl/asset/starfield.jpg',
+          environment: ROOT_PATH + '/data-gl/asset/starfield.jpg',
           atmosphere: {
             show: true
           },
           light: {
             ambient: {
-              intensity: 1.5
+              intensity: 0.1
             },
             main: {
-              intensity: 1.9
+              intensity: 1.5
             }
           }
         },
