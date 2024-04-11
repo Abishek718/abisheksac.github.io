@@ -34,12 +34,19 @@ var getScriptPromisify = (src) => {
         await getScriptPromisify('https://cdn.bootcdn.net/ajax/libs/echarts/5.0.0/echarts.min.js')
   
         const chart = echarts.init(this._root)
+        const piePatternSrc =
+        'https://echarts.apache.org/examples/data-gl/asset/starfield.jpg';
+        const bgPatternSrc = 'https://echarts.apache.org/examples/data-gl/asset/starfield.jpg';
+        const piePatternImg = new Image();
+        piePatternImg.src = piePatternSrc;
+        const bgPatternImg = new Image();
+        bgPatternImg.src = bgPatternSrc;
         const option = {
             backgroundColor: '#000',
             globe: {
-              baseTexture: 'https://echarts.apache.org/examples/data-gl/asset/earth.jpg',
+              baseTexture: piePatternImg,
               shading: 'lambert',
-              environment: 'https://echarts.apache.org/examples/data-gl/asset/starfield.jpg',
+              environment: bgPatternImg,
               atmosphere: {
                 show: true
               },
