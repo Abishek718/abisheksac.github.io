@@ -46,7 +46,7 @@ option = {
   globe: {
     baseTexture: ROOT_PATH + '/data-gl/asset/starfield.jpg',
     shading: 'lambert',
-    // environment: ROOT_PATH + '/data-gl/asset/starfield.jpg',
+    // environment: 'https://abishek718.github.io/abisheksac.github.io/Custom%20Wid/New1/starfield.jpg',
     atmosphere: {
       show: true
     },
