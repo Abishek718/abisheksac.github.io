@@ -34,25 +34,18 @@ var getScriptPromisify = (src) => {
         await getScriptPromisify('https://cdn.bootcdn.net/ajax/libs/echarts/5.0.0/echarts.min.js')
   
         const chart = echarts.init(this._root)
-        const piePatternSrc =
-        'https://echarts.apache.org/examples/data-gl/asset/starfield.jpg';
-        const bgPatternSrc = 'https://echarts.apache.org/examples/data-gl/asset/starfield.jpg';
-        const piePatternImg = new Image();
-        piePatternImg.src = piePatternSrc;
-        const bgPatternImg = new Image();
-        bgPatternImg.src = bgPatternSrc;
         const option = {
             backgroundColor: '#000',
             globe: {
-              baseTexture: piePatternImg,
+              baseTexture:'https://echarts.apache.org/examples/data-gl/asset/starfield.jpg',
               shading: 'lambert',
-              environment: bgPatternImg,
+              //environment: 'https://echarts.apache.org/examples/data-gl/asset/starfield.jpg',
               atmosphere: {
                 show: true
               },
               light: {
                 ambient: {
-                  intensity: 0.1
+                  intensity: 1.5
                 },
                 main: {
                   intensity: 1.5
@@ -60,11 +53,10 @@ var getScriptPromisify = (src) => {
               }
             },
             series: []
-          }
+          };
         chart.setOption(option)
       }
     }
   
     customElements.define('com-sap-sample-echarts-prepared', SamplePrepared)
   })()
-  
