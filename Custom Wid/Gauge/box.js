@@ -76,10 +76,10 @@
 		render(val, info, color) {
 			var val1 = val * 0.01;
 			var x = this.svg_circle_arc_path(500, 500, 450, -90, val1 * 180.0 - 90);
-			var rounded = Math.round( val * 100 ) / 100;
+			var rounded = Math.round( val * 10) / 10;
 
 			
-			if(rounded >=0 && rounded <=200) {
+			if(rounded >=0 && rounded <=100) {
 				this.$style.innerHTML = ':host {border-radius: 10px;border-width: 2px;border-color: black;border-style: solid;display: block;}.body {background: #fff;}.metric {padding: 10%;}.metric svg {max-width: 100%;}.metric path {stroke-width: 75;stroke: #ecf0f1;fill: none;}.metric text {font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;}.metric.participation path.data-arc {stroke: ' + color + ';}.metric.participation text {fill: ' + color + ';}';
 				this.$svg.innerHTML = '<path d="M 950 500 A 450 450 0 0 0 50 500"></path><text class="percentage" text-anchor="middle" alignment-baseline="middle" x="500" y="300" font-size="140" font-weight="bold">' + rounded + '%</text><text class="title" text-anchor="middle" alignment-baseline="middle" x="500" y="450" font-size="90" font-weight="normal">' + info + '</text><path d="' + x + '" class="data-arc"></path>"';
 			}
