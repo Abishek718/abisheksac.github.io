@@ -76,7 +76,7 @@
 		render(val, info, color) {
 			var val1 = val * 0.01;
 			var x = this.svg_circle_arc_path(500, 500, 450, -90, val1 * 180.0 - 90);
-			var rounded = Math.round( val * 10 ) / 10;
+			var rounded = Math.round( val * 100 ) / 100;
 
 			
 			if(rounded >=0 && rounded <=200) {
