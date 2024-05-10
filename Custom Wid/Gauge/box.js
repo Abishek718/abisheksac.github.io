@@ -25,7 +25,7 @@
 		.metric path {
 		  stroke-width: 75;
 		  stroke: #000000;
-		  fill: #000000;
+		  fill: black;
 		}
 		
 		.metric text {
