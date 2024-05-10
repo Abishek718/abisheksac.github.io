@@ -11,7 +11,7 @@
 		} 
 
 		body {
-		  background: #000000;
+		  background: #fff;
 		}
 		
 		.metric {
